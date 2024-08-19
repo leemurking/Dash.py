@@ -84,7 +84,7 @@ gender_smoker_box = px.box(medical, x='sex', y='medical charges', color='smoker'
 
 # Initialize the Dash app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-
+server = app.server
 # Apply custom CSS
 app.index_string = '''
 <!DOCTYPE html>
